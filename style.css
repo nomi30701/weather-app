@@ -7,15 +7,16 @@ body {
     align-items: center; 
     justify-content: flex-start; 
 }
-.weatherForm {
+.weatherForm{
     margin: 100px;
     width: 50%;
     max-width: 700px;
-    background: rgb(74, 74, 74);
+    background: rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 60px;
+    border: 2px solid white;
 }
 .cityInput{
     background: transparent;
@@ -23,7 +24,8 @@ body {
     border: 0;
     outline: none;
     padding: 24px 20px;
-    font-size: 20px;
+    margin-left: 10px;
+    font-size: 25px;
     color: white;
 }
 button img {
