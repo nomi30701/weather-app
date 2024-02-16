@@ -5,37 +5,79 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    justify-content: flex-start; 
 }
 .weatherForm{
+    position: relative;
     margin: 100px;
+    margin-bottom: 20px;
     width: 50%;
-    max-width: 700px;
+    max-width: 500px;
     background: rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: center;
     align-items: center;
-    border-radius: 60px;
+    border-radius: 10px;
     border: 2px solid white;
 }
-.cityInput{
+.Info_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    color: white;
+}
+
+
+.weatherForm .cityInput { 
     background: transparent;
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(100% - 78px); 
+    height: calc(93%); 
     flex: 1;
     border: 0;
     outline: none;
-    padding: 24px 20px;
-    margin-left: 10px;
-    font-size: 25px;
+    font-size: 28px;
     color: white;
 }
-button img {
-    width: 30px;
-}
-button {
+.weatherForm button {
     border: 0;
     border-radius: 50%;
     width: 60px;
     height: 60px;
     background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
+}
+
+.Info_city{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.Info_temp{
+    display: flex;
+    margin: 0 0;
+    font-size: 2.7rem;
+    align-items: center;
+    justify-content: center;
+}
+.Info_temp_min_max{
+    margin: 7px 0;
+    font-size: 1.2rem;
+}
+.Info_date_time{
+    font-size: 1.2rem;
+}
+.sun_rise_set_time, .Info_windSpeed_humidity{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+.sun_rise, .sun_set, .Info_wind_speed, .Info_humidity{
+    text-align: center;
+    margin: 0 30px;
 }
