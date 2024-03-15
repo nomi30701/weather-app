@@ -101,3 +101,24 @@ footer {
     margin-top: 18px;
     width: 60px;
 }
+#setapi-btn {
+    position: absolute;
+    right: -90px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+#url-btn {
+    position: absolute;
+    right: -170px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 46px;
+    height: 56px;
+    padding: 1px 6px;
+    text-align: center;
+    font-size: 13.3px;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}

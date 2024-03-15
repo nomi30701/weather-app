@@ -1,4 +1,4 @@
-const API_KEY = '';
+var API_KEY = '';
 const weatherForm = document.querySelector('.weatherForm');
 const cityInput = document.querySelector('.cityInput');
 const Info_container = document.querySelector('.Info_container');
@@ -129,4 +129,10 @@ function show_error_ToPage(error) {
 }
 function temp_KtoC(temp) {
     return (temp - 273.15).toFixed(1)
+}
+function setApiKey() {
+    API_KEY = prompt("Please enter your API key:", "");
+    if (API_KEY != null) {
+        console.log("API Key is " + API_KEY);
+    }
 }
